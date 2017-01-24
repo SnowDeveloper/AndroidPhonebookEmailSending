@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.snowwhite.homeassignment1.EmailSending">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Sending"
+        android:id="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textRPID"
+        android:layout_toEndOf="@+id/textRPID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:id="@+id/textSub"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipient&apos;s Email ID:"
+        android:id="@+id/textRPID"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textSub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body:"
+        android:id="@+id/textBody"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextSub"
+        android:layout_alignBottom="@+id/textSub"
+        android:layout_toRightOf="@+id/textSub"
+        android:layout_toEndOf="@+id/textSub" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRID"
+        android:layout_alignBottom="@+id/textRPID"
+        android:layout_toRightOf="@+id/textRPID"
+        android:layout_toEndOf="@+id/textRPID" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextBdy"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editTextSub"
+        android:layout_alignStart="@+id/editTextSub" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:id="@+id/button2"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/editTextBdy"
+        android:layout_toRightOf="@+id/textRPID"
+        android:layout_toEndOf="@+id/textRPID"
+        android:onClick="sendEmail" />
+</RelativeLayout>

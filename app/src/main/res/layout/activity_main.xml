@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    tools:context="com.example.snowwhite.homeassignment1.MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5499C7"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Contacts"
+        android:id="@+id/textView"
+        android:background="#52BE80"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#f4faf6f6"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Nothing Selected Yet"
+        android:id="@+id/textView2"
+        android:background="#F5B041"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchText"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/button"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignBottom="@+id/searchText"
+        android:layout_toRightOf="@+id/searchText"
+        android:layout_toEndOf="@+id/searchText"
+        android:onClick="searchContacts" />
+
+</RelativeLayout>
